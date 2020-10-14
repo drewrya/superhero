@@ -4,7 +4,7 @@ select
 	real_name,
 	full_name,
 	alignment,
-	overall_score,
+	creator,
 	intelligence_score,
 	strength_score,
 	speed_score,
