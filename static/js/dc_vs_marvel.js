@@ -241,7 +241,7 @@ function AvgFilter() {
                 text:'DC Comics Heroes/Villains',
                 font: {
                   size: 24,
-                  color: 'darkblue'
+                  color: 'white'
                 },
                 xref: 'paper',
                 x: 0.05,
@@ -341,7 +341,7 @@ function AvgFilter() {
                 text:'DC Comics Heroes/Villains',
                 font: {
                   size: 24,
-                  color: 'darkblue'
+                  color: 'white'
                 },
                 xref: 'paper',
                 x: 0.05,
@@ -441,7 +441,7 @@ function AvgFilter() {
                 text:'DC Comics Heroes/Villains',
                 font: {
                   size: 24,
-                  color: 'darkblue'
+                  color: 'white'
                 },
                 xref: 'paper',
                 x: 0.05,
