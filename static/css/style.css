@@ -247,3 +247,39 @@ select {
   background-color: maroon; /* Add a green color to the "active/current" link */
   color: white;
 }
+
+
+.about-info {
+  background-color: whitesmoke; /* Grey background color */
+  color: black; /* Black text color */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+
+
+.about-fly-in {
+  position: relative;
+  height: 550px;
+  padding: 20px;
+  margin: 0;
+  background-attachment: fixed;
+  background-position: top center;
+  background-size: cover;
+  text-align: center;
+}
+
+
+.about-fly-in h1 {
+  /*margin-top: 200px;*/
+  font-size: 0.05rem;
+  animation: title 1.2s forwards linear;
+  text-align: center;
+}
+
+.about-text p {
+  font-size: 2rem;
+  opacity: 0;
+  animation: subtitle 1.2s forwards linear;
+  animation-delay: 1.2s;
+  text-align: center;
+}
