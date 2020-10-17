@@ -1,28 +1,19 @@
-// from data.js
-var tableData = data;
-
-// Select the button
-var button = d3.select("#filter-btn");
-
-// Select the form
-var form = d3.select("#form");
-
-// Get a reference to the table body
-var tbody = d3.select("tbody");
-
-// Create event handlers 
-button.on("click", runEnter);
-form.on("submit",runEnter);
-
- // Use d3 to update each cell's text with
-// biography values( `Name`, `Real name`, `History Biography`, `Powers Biography`, `Place of Birth`, `Alignment`, `Gender`, `Height`, `Weight`, `Eye Color`, `Hair Color`, and `Skin Color`)
-data.forEach(function(biography) {
-   console.log(biography);
-   var row = tbody.append("tr");
-   Object.entries(biography).forEach(function([value]) {
-    //Append a cell to the row for each value
-    // in the biography object
-    var cell = row.append("td");
-    cell.text(value);
-   });
- });
+d3.csv("/data/biography.csv", function(d) {
+  return {
+    name : d.name,
+    real_name : d.real_name,
+    history_text : d.history_text,
+    powers_text : d.powers_text,
+    place_of_birth : d.place_of_birth,
+    alignment : d.alignment,
+    gender : d.gender,
+    type_race : d.type_race,
+    height : +d.height,
+    weight: +d.weight,
+    eye_color : d.eye_color,
+    hair_color : d.hair_color,
+    skin_color : d.skin_color
+  };
+}).then(function(data) {
+  console.log(data[0]);
+});

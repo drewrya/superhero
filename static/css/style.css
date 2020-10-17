@@ -24,7 +24,7 @@ body {
   right: 0;
   bottom: 0;
   left: 0;
-  min-height: 100px;
+  min-height: 150px;
   background: black;
 }
 
@@ -47,7 +47,7 @@ body {
 .nav-ufo {
   position: absolute;
   bottom: 5px;
-  left: 150px;
+  left: 10px;
   width: 35px;
   color: white;
 }
@@ -89,6 +89,7 @@ select {
 
 .margin-top-50 {
   margin-top: 50px;
+  margin-left: -150px;
 }
 
 /* The styles for the parallax */
