@@ -68,5 +68,5 @@ When sourcing the data from the API it returns this result:
      }
    },
 
-For visualizations, we will be creating a searchable list website like the UFO homework that will be able to populate for certain search filters, a bar chart page that will have different visualizations such as the top 5/ VS / etc.
+For visualizations, we will be creating a searchable list website like the UFO homework that will be able to populate for certain search filters, a bar chart page that will have different visualizations such as the top 5/ VS / etc.  After more searching on off times the group found the information exported into various CSV files that we then cloned into our repository and started working on.  Creating Javascript and HTML files, initially using our previous UFO homework, we could then begin to make the site have a initial list of all the super heroes on the index page, marvel vs dc visualizations, and searchable a biographies page.
 
