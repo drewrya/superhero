@@ -151,5 +151,5 @@ function alignmentFilter(){
 }// end of function
 
 // AllData(); //run unfiltered table
-// universeFilter(); //run filter by Universe
+universeFilter(); //run filter by Universe
 alignmentFilter(); //run filter by Alignment
