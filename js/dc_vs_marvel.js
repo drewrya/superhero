@@ -1,5 +1,5 @@
 // //Average stats
-function Init() {
+function AvgFilter() {
     d3.csv("/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
@@ -697,7 +697,7 @@ function ComFilter() {
 
     }); //end of d3 function
 };
-Init()
+AvgFilter()
 // IntFilter()
 // StrFilter()
 // SpeFilter()
