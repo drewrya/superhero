@@ -75,12 +75,18 @@ select {
 
 #table-area th {
   text-align: center;
+  background-color: whitesmoke;
 }
 
 #table-area th:first-child,
 #table-area th:nth-child(2),
 #table-area th:nth-child(6) {
   min-width: 70px;
+}
+
+#table-area tbody {
+  text-align: center;
+  background-color: whitesmoke;
 }
 
 .loader {
