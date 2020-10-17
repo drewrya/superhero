@@ -8,8 +8,8 @@ d3.csv("/data/biography.csv", function(d) {
     alignment : d.alignment,
     gender : d.gender,
     type_race : d.type_race,
-    height : d.height,
-    weight: d.weight,
+    height : +d.height,
+    weight: +d.weight,
     eye_color : d.eye_color,
     hair_color : d.hair_color,
     skin_color : d.skin_color
