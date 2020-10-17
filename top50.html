@@ -15,13 +15,10 @@
     <nav class="navbar navbar-default">
       <div class="container-fluid">
           <div class="navbar-header">
-          <!-- <a class="navbar-brand" href="index.html">UFO Sightings -->
-          <!--  <img class="nav-ufo" src="static/images/ufo.svg"> </a> -->
         </div>
       </div>
     </nav>
     <div class="hero text-center">
-       <!-- <h1>Powerstats</h1> -->
     </div>
     <div class="container">
       <div class="row margin-top-50">
@@ -31,46 +28,21 @@
           <a href="top50.html"class="active">Top 50</a>
           <a href="powerstats.html">Powerstats</a>
         </div> 
-        <select id="Stats" onchange="statChange(this)">
-          <option value = 'Avg'>Average</option>
-          <option value = 'Int'>Intelligence</option>
-          <option value = 'Str'>Strength</option>
-          <option value = 'Spe'>Speed</option>
-          <option value = 'Dura'>Durability</option>
-          <option value = 'Pwr'>Power</option>
-          <option value ='Com'>Combat</option>
-        </select>
         <div class="col-md-10">
+          <select id="Stats" onchange="statChange(this)">
+            <option value = 'Avg'>Average</option>
+            <option value = 'Int'>Intelligence</option>
+            <option value = 'Str'>Strength</option>
+            <option value = 'Spe'>Speed</option>
+            <option value = 'Dura'>Durability</option>
+            <option value = 'Pwr'>Power</option>
+            <option value ='Com'>Combat</option>
+          </select>
             <div id="bar">
             </div>
             <div id="bar2">
             </div>
           </div>
-        <!-- <div class="col-md-2">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter a Super Hero</label>
-                        <input class="form-control" id="superhero" type="text" placeholder="Ex. Superman">
-                      </li>
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Search</button>
-                </form>
-              </div>
-            </div>
-          </aside>
-      </div> -->
-        <!-- <div class="col-md-10">
-          <div id="about-site" class="">
-            <body> Fill in this section with our About info </body>
-          </div>
-        </div> -->
         </div>
       </div>
     </div>
