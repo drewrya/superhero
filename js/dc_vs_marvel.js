@@ -704,3 +704,28 @@ AvgFilter()
 // DuraFilter()
 // PwrFilter()
 // ComFilter()
+
+//Stat change filter
+function statChange() {
+  if (document.getElementById("Stats").value === "Avg"){
+    AvgFilter()
+  }     
+  else if (document.getElementById("Stats").value === "Int"){
+    IntFilter()
+  }
+  else if (document.getElementById("Stats").value === "Str"){
+    StrFilter()
+  }
+  else if (document.getElementById("Stats").value === "Spe"){
+    SpeFilter()
+  }
+  else if (document.getElementById("Stats").value === "Dura"){
+    DuraFilter()
+  }
+  else if (document.getElementById("Stats").value === "Pwr"){
+    PwrFilter()
+  }
+  else{
+    ComFilter()
+  }                                                
+}
