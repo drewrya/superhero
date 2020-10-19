@@ -3,18 +3,6 @@ function runFilter(){
 
         var tbody = d3.select("tbody");
         // console.log(herodata)
-
-        var dc_data = herodata.filter(function (hero){
-            return hero.creator === 'DC Comics' & hero.alignment === 'Good'
-            });
-        var marvel_data = herodata.filter(function (hero){
-            return hero.creator === 'Marvel Comics'
-            });
-
-        var other_data = herodata.filter(function (hero){
-            return hero.creator !== 'Marvel Comics' & hero.creator !== 'DC Comics'
-                });
-        // console.log(dc_data)
         
         // ALL universes
         if (document.getElementById("universe").value === "ALL" & document.getElementById("alignment").value === "ALL"){
@@ -280,8 +268,48 @@ function runFilter(){
 
 runFilter() //calls runfilter to display inital data
 
-// // Select the form
-// var form = d3.select("#form");
+// Select the form
+var form = d3.select("#form");
 
-// // Create event handlers for date
-// form.on("change",searchFilter);
+// Create event handlers for superhero
+form.on("change",searchFilter);
+
+// Select the button
+var filterbutton = d3.select("#filter-btn");
+
+// Create event handlers for date
+filterbutton.on("click", searchFilter);
+
+function searchFilter(){
+    d3.csv("./data/powerstats.csv").then(function(searchdata){
+
+        var tbody = d3.select("tbody");
+
+        searchdata.forEach((tableInput) => {
+            var row = tbody.append("tr");
+            Object.entries(tableInput).forEach(([key, value]) => {
+              var cell = row.append("td");
+              cell.text(value);
+            });
+        });//end of tabledata input
+
+        var heroInput = d3.select('#superhero')
+        // Get the date value property of the input element
+        var heroValue = heroInput.property("value");
+
+        var filteredData = searchdata.filter(data => ((data.name).match(heroValue)) 
+        );
+
+        tbody.html("");
+
+        filteredData.forEach((tableInput) => {
+            var row = tbody.append("tr");
+            Object.entries(tableInput).forEach(([key, value]) => {
+            var cell = row.append("td");
+            cell.text(value);
+            });  
+        });
+
+
+    });//end of d3
+}
