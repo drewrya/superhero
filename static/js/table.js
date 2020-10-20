@@ -11,7 +11,7 @@ var filterbutton = d3.select("#filter-btn");
 filterbutton.on("click", searchFilter);
 
 function searchFilter(){
-    d3.csv("./data/powerstats.csv").then(function(searchdata){
+    d3.csv("/data/powerstats.csv").then(function(searchdata){
 
         var tbody = d3.select("tbody");
 
@@ -45,7 +45,7 @@ function searchFilter(){
 }
 
 function runFilter(){
-    d3.csv("./data/powerstats.csv").then(function(herodata){
+    d3.csv("/data/powerstats.csv").then(function(herodata){
 
         var tbody = d3.select("tbody");
         // console.log(herodata)

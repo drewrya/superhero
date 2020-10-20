@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Super Hero</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="static/css/style.css">
+</head>
+
+<body>
+  <div class="wrapper">
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+          <div class="navbar-header">
+        </div>
+      </div>
+    </nav>
+    <div class="hero text-center">
+    </div>
+    <div class="container">
+      <div class="row margin-top-50">
+        <div class="col-md-2">
+            <div class="vertical-menu">
+                <a href="/" >Home</a>
+                <a href="bios">Bios</a>
+                <a href="top50">Top 50</a>
+                <a href="powerstats"class="active">Powerstats</a>
+            </div>
+          <aside class="filters">
+            <div class="panel panel-default">
+              <div class="panel-heading">Search</div>
+              <div class="panel-body">
+                <form>
+                  <div class="form-group">
+                    <ul class="list-group" id="filters">
+                      <li class="filter list-group-item">
+                        <label for="date">Enter a Super Hero</label>
+                        <input class="form-control" id="superhero" type="text" placeholder="Ex. Superman">
+                      </li>
+                    </ul>
+                  </div>
+                  <button id="filter-btn" type="button" class="btn btn-default">Click To Search</button>
+                  <select id="universe" onchange="runFilter(this)">
+                    <option value = 'ALL'>All Universes</option>
+                    <option value = 'DC'>DC Comics</option>
+                    <option value = 'Marvel'>Marvel Comics</option>
+                    <option value = 'Other'>Other</option>
+                  </select>
+                  <select id="alignment" onchange="runFilter(this)">
+                    <option value = 'ALL'>All Alignments</option>
+                    <option value = 'Good'>Good</option>
+                    <option value = 'Bad'>Bad</option>
+                    <option value = 'Other'>Other</option>
+                  </select>
+                  <select id="Stats" onchange="runFilter(this)">
+                    <option value = 'None'>Unsorted Stats</option>
+                    <option value = 'Avg'>Top Average</option>
+                    <option value = 'Int'>Top Intelligence</option>
+                    <option value = 'Str'>Top Strength</option>
+                    <option value = 'Spe'>Top Speed</option>
+                    <option value = 'Dura'>Top Durability</option>
+                    <option value = 'Pwr'> Top Power</option>
+                    <option value ='Com'>Top Combat</option>
+                  </select>
+                </form>
+              </div>
+            </div>
+          </div>
+          </aside>
+          <div class="col-md-10">
+            <div id="table-area">
+              <table id="hero-table" class="table-hover">
+                <thead>
+                  <tr>
+                    <th class="table-head">Name</th>
+                    <th class="table-head">Real Name</th>
+                    <th class="table-head">Full Name</th>
+                    <th class="table-head">Alignment</th>
+                    <th class="table-head">Creator</th>
+                    <th class="table-head">Intellegence</th>
+                    <th class="table-head">Strength</th>
+                    <th class="table-head">Speed</th>
+                    <th class="table-head">Durability</th>
+                    <th class="table-head">Power</th>
+                    <th class="table-head">Combat</th>
+                    <th class="table-head">Average</th>
+                  </tr>
+                </thead>
+                <tbody></tbody>
+              </table>
+            </div>
+          </div>              
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
+  <script src="https://d3js.org/d3.v5.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  <script src="/static/js/table.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link rel="stylesheet" href="/static/css/style.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

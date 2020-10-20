@@ -10,6 +10,18 @@ app = Flask(__name__)
 def home():
     return render_template('index.html')
 
+@app.route("/bios")
+def bios():
+    return render_template('bios.html')
+
+@app.route("/powerstats")
+def powerstats():
+    return render_template('powerstats.html')
+
+@app.route("/top50")
+def top50():
+    return render_template('top50.html')
+
 if __name__ == "__main__":
     app.run(debug=True)
 
