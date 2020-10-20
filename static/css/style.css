@@ -76,6 +76,7 @@ select {
 #table-area th {
   text-align: center;
   background-color: whitesmoke;
+  color: black;
 }
 
 #table-area th:first-child,
@@ -87,6 +88,7 @@ select {
 #table-area tbody {
   text-align: center;
   background-color: whitesmoke;
+  color: black;
 }
 
 .loader {
