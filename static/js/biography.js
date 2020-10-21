@@ -3,7 +3,7 @@ biofilter();
 
 
 function biofilter() {
-  d3.csv("data/biography.csv").then(function (data) {
+  d3.csv("/static/data/biography.csv").then(function (data) {
     names = data.map(obj => obj.name);
 
 

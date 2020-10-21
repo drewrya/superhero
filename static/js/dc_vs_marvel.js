@@ -1,6 +1,6 @@
 //Average stats
 function AvgFilter() {
-    d3.csv("/data/powerstats.csv").then(function(herodata){
+    d3.csv("/static/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
         var dc_data = herodata.filter(function (hero){
