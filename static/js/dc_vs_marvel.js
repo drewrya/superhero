@@ -100,7 +100,7 @@ function AvgFilter() {
   };
   //Intelligence score
   function IntFilter() {
-    d3.csv("/data/powerstats.csv").then(function(herodata){
+    d3.csv("/static/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
         var dc_data = herodata.filter(function (hero){
@@ -200,7 +200,7 @@ function AvgFilter() {
   };
   //Strength score
   function StrFilter() {
-    d3.csv("/data/powerstats.csv").then(function(herodata){
+    d3.csv("/static/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
         var dc_data = herodata.filter(function (hero){
@@ -300,7 +300,7 @@ function AvgFilter() {
   };
   //Speed score
   function SpeFilter() {
-    d3.csv("/data/powerstats.csv").then(function(herodata){
+    d3.csv("/static/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
         var dc_data = herodata.filter(function (hero){
@@ -400,7 +400,7 @@ function AvgFilter() {
   };
   //Durablity Score
   function DuraFilter() {
-    d3.csv("/data/powerstats.csv").then(function(herodata){
+    d3.csv("/static/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
         var dc_data = herodata.filter(function (hero){
@@ -500,7 +500,7 @@ function AvgFilter() {
   };
   //Power Score
   function PwrFilter() {
-    d3.csv("/data/powerstats.csv").then(function(herodata){
+    d3.csv("/static/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
         var dc_data = herodata.filter(function (hero){
@@ -599,7 +599,7 @@ function AvgFilter() {
     }); //end of d3 function
   };
   function ComFilter() {
-    d3.csv("/data/powerstats.csv").then(function(herodata){
+    d3.csv("/static/data/powerstats.csv").then(function(herodata){
         
         //filter DC Comics and Marvel Comics heroes/villains
         var dc_data = herodata.filter(function (hero){

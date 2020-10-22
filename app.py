@@ -1,7 +1,7 @@
 # import necessary libraries
 from flask import Flask, render_template
-import csv
-import os
+import pymongo
+
 
 # create instance of Flask app
 app = Flask(__name__)
@@ -10,6 +10,7 @@ app = Flask(__name__)
 # create route that renders index.html template
 @app.route("/")
 def home():
+
     return render_template('index.html')
 
 @app.route("/bios")
