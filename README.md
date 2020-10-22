@@ -64,9 +64,6 @@ When sourcing the data from the API it returns this result:
      "connections": {
        "group-affiliation": "Batman Family, Justice League Unlimited",
        "relatives": "Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis (mother), Matt McGinnis (brother)"
-     },
-     "image": {
-       "url": "https://www.superherodb.com/pictures2/portraits/10/100/10441.jpg"
      }
    },
 
