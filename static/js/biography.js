@@ -41,7 +41,7 @@ var filterbutton = d3.select("#filter-btn");
 filterbutton.on("click", searchFilter);
 
 function searchFilter(){
-  d3.csv("/static/data/powerstats.csv").then(function(searchdata){
+  d3.csv("/static/data/biography.csv").then(function(searchdata){
 
         var tbody = d3.select("tbody");
 

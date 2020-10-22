@@ -1,6 +1,6 @@
 # import necessary libraries
 from flask import Flask, render_template
-import pymongo
+# import pymongo
 
 
 # create instance of Flask app
