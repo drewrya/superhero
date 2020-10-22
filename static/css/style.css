@@ -285,9 +285,27 @@ select {
 }
 
 .about-text p {
+  margin-top: 600px;
   font-size: 2rem;
   opacity: 0;
   animation: subtitle 1.2s forwards linear;
   animation-delay: 1.2s;
   text-align: center;
+}
+
+.ml4  {
+  position: relative;
+  font-weight: 900;
+  font-size: 1em;
+  color: white;
+  text-shadow: -1px -1px 0 white, 1px -1px 0 black, -1px 1px 0 #000, 1px 1px 0 #000;
+}
+.ml4 .letters {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  top: 0.3em;
+  right: 0;
+  opacity: 0;
+  font-family: fantasy;
 }
