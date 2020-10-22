@@ -1,7 +1,5 @@
 # import necessary libraries
 from flask import Flask, render_template
-# import pymongo
-
 
 # create instance of Flask app
 app = Flask(__name__)
@@ -30,4 +28,3 @@ def top50():
 
 if __name__ == "__main__":
     app.run(debug=True)
-
