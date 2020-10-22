@@ -1,5 +1,5 @@
-# superhero
-Project 2 Proposal - Superhero stats
+## Superhero
+# Project 2 Proposal - Superhero stats
 
 Ashley Drewry, Hunter Johnson, Patrick Beltran, John Falcone
 
@@ -68,5 +68,5 @@ When sourcing the data from the API it returns this result:
      }
    },
 
-For visualizations, we will be creating a searchable list website like the UFO homework that will be able to populate for certain search filters, a bar chart page that will have different visualizations such as the top 5/ VS / etc.  After more searching on off times the group found the information exported into various CSV files that we then cloned into our repository and started working on.  Creating Javascript and HTML files, initially using our previous UFO homework, we could then begin to make the site have a initial list of all the super heroes on the index page, marvel vs dc visualizations, and searchable a biographies page.
+For visualizations, we will be creating a searchable list website like the UFO homework that will be able to populate for certain search filters, a bar chart page that will have different visualizations such as the top 5/ VS / etc.  After more searching on off times the group found the information exported into a Kaggle dataset library that allowed us to export it into Flask and begin the data visualization.  Creating Javascript and HTML files, initially using our previous UFO homework, we could then begin to make the site have a initial list of all the super heroes on the index page, marvel vs dc visualizations, and searchable a biographies page. Each page will allow the user to either filter, select visualizations, and search for bios with any text string.
 
