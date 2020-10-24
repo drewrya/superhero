@@ -14,59 +14,19 @@ https://superheroapi.com/
 
 When sourcing the data from the CSV it returns this result:
 
-{
- "response": "success",
- "results-for": "batman",
- "results": [
-   {
-     "id": "69",
-     "name": "Batman",
-     "powerstats": {
-       "intelligence": "81",
-       "strength": "40",
-       "speed": "29",
-       "durability": "55",
-       "power": "63",
-       "combat": "90"
-     },
-     "biography": {
-       "full-name": "Terry McGinnis",
-       "alter-egos": "No alter egos found.",
-       "aliases": [
-         "Batman II",
-         "The Tomorrow Knight",
-         "The second Dark Knight",
-         "The Dark Knight of Tomorrow",
-         "Batman Beyond"
-       ],
-       "place-of-birth": "Gotham City, 25th Century",
-       "first-appearance": "Batman Beyond #1",
-       "publisher": "DC Comics",
-       "alignment": "good"
-     },
-     "appearance": {
-       "gender": "Male",
-       "race": "Human",
-       "height": [
-         "5'10",
-         "178 cm"
-       ],
-       "weight": [
-         "170 lb",
-         "77 kg"
-       ],
-       "eye-color": "Blue",
-       "hair-color": "Black"
-     },
-     "work": {
-       "occupation": "-",
-       "base": "21st Century Gotham City"
-     },
-     "connections": {
-       "group-affiliation": "Batman Family, Justice League Unlimited",
-       "relatives": "Bruce Wayne (biological father), Warren McGinnis (father, deceased), Mary McGinnis (mother), Matt McGinnis (brother)"
-     }
-   },
+{name: "Spider-Man (Ultimate)", real_name: "Peter Parker", full_name: "Peter Benjamin Parker", alignment: "Good", creator: "Marvel Comics", …}
+alignment: "Good"
+avg_stats: "65"
+combat_score: "50"
+creator: "Marvel Comics"
+durability_score: "55"
+full_name: "Peter Benjamin Parker"
+intelligence_score: "85"
+name: "Spider-Man (Ultimate)"
+power_score: "100"
+real_name: "Peter Parker"
+speed_score: "60"
+strength_score: "40"
 
 For visualizations, we will be creating a searchable list website like the UFO homework that will be able to populate for certain search filters, a bar chart page that will have different visualizations such as the top 50/ VS / etc.  After more searching on off times the group found the information exported into a Kaggle dataset library that allowed us to export it into Flask and begin the data visualization.  Creating Javascript and HTML files, initially using our previous UFO homework, we could then begin to make the site each individual page will have different features to allow the user to either filter, select visualizations, and search for bios with any text string. 
 
