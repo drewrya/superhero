@@ -10,7 +10,7 @@ Now still thinking about a lighter topic for this second project the team search
 https://www.superherodb.com/ (Orginial Database)
 https://superheroapi.com/ 
 
-When sourcing the data from the CSV it returns this result:
+After cleaning up the data and separating it into two different CSVs, an example response from powerstats.csv returns this result:
 
 {name: "Spider-Man (Ultimate)", real_name: "Peter Parker", full_name: "Peter Benjamin Parker", alignment: "Good", creator: "Marvel Comics", …}
 alignment: "Good"
