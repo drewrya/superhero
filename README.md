@@ -3,6 +3,8 @@
 
 Ashley Drewry, Hunter Johnson, Patrick Beltran, John Falcone
 
+![Marvelvsdc](static/images/img1.png)
+
   Beginning with scouring the web for free API’s to use and thinking of going for something a little more light-hearted than previous projects. We initially started trying to use the twitch API to give us some sort of gaming data either about what games are played most on twitch or what games have the most streamers.  But when we started trying to get into the API it required the use of two keys and an authorization token generated from twitch, and even after that, the API was confusing to use and frustrating to work with. This was the end of day one, and we were back at the drawing board for choosing a data set to work with.
 
   Now still thinking about a lighter topic for this second project the team searched for superheroes and Pokemon, coming up with various APIs for each. Looking through them it was seen that a Superheroes API was the easiest to work with and contained all of the superheroes from the Marvel and DC universes, plus others including but not limited to Star Wars assuming this data is pulled from comic book sources.
